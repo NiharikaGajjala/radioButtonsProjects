@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <center>
+        <input type="radio" id="tx1" name="grp1" value="BlockChain">BlockChain Development<br>
+        <input type="radio" id="tx2" name="grp1" value="Javascript">Javascript<br>
+        <input type="radio" id="tx3" name="grp1" value="Solidity">Solidity<br>
+        <input type="radio" id="tx4" name="grp1" value="Etherium">Etherium<br> 
+    
+        <button onclick="f1()" id="btn1">Onclick</button>
+
+    </center>
+
+    <script>
+        function f1(){
+            let rd1=document.getElementById("tx1");
+            let rd2=document.getElementById("tx2");
+            let rd3=document.getElementById("tx3");
+            let rd4=document.getElementById("tx4");
+            if(rd1.checked==true){
+                alert("The Topic for today class is : "+rd1.value)
+            }
+            else if(rd2.checked==true){
+                alert('Today topic  is:'+ rd2.value)
+            }
+            else if(rd3.checked==true){
+                alert("Today topic is:"+ rd3.value)
+            }
+            else if(rd4.checked==true){
+                alert("Today topic is:"+ rd4.value)
+            }
+            else{
+                alert("Please select anyone from below")
+            }
+        }
+    </script>
+</body>
+</html>
